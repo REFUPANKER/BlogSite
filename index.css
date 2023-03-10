@@ -1,0 +1,302 @@
+* {
+    user-select: none;
+    outline: none;
+    offset: none;
+    cursor: default;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+    font-size: 5vh;
+    color: white;
+    margin: 0vh;
+}
+
+body::-webkit-scrollbar {
+    background-color: black;
+    width: 2vh;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(150, 150, 150);
+    border-radius: 0.5vh;
+}
+
+.FitScreenHeight {
+    height: 100%;
+}
+
+.AlignCenter {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.HorizontalCenterAlign {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.VerticalCenterAlign {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.NavBar {
+    height: 10vh;
+    position: sticky;
+    background-color: transparent;
+    top: 0vh;
+    z-index: 11;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: none;
+}
+
+.NavBar a {
+    display: inline-block;
+    margin-right: 2vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    height: 100%;
+    width: fit-content;
+    color: white;
+    font-family: lucida console;
+    text-align: center;
+    padding-top: 4vh;
+    background-color: transparent;
+    font-size: 60%;
+    transition: 0.3s;
+    border: none;
+}
+
+.NavBar a:hover {
+    color: silver;
+}
+.NavBar a:active {
+    color: gray;
+}
+.HomePanel {
+    z-index: 10;
+}
+
+.HomePanel * {
+    z-index: 10;
+}
+
+.UnderNameTitle {
+    margin: 0vh;
+    font-size: 2vw;
+    text-align: center;
+    color: silver;
+    transition: 0.3s;
+    content: "";
+}
+
+.UnderNameTitle::after {
+    content: "";
+    animation: UnderNameAnim 20s infinite linear;
+}
+
+@keyframes UnderNameAnim {
+    0% {
+        content: "Individual Software Developer";
+    }
+
+    25% {
+        content: "Mobile Apps";
+
+    }
+
+    50% {
+        content: "Desktop Apps";
+
+    }
+
+    75% {
+        content: "Backend & Frontend Projects";
+    }
+
+    100% {
+        content: "Develops & Improves";
+    }
+}
+
+.AboutPanel {
+    height: 100vh;
+    background-color: rgb(35, 35, 35);
+}
+
+.AboutCardStyle {
+    border-radius: 2vh;
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.AboutCardStyle::-webkit-scrollbar {
+    width: 1vw;
+}
+
+.AboutCardStyle::-webkit-scrollbar-thumb {
+    background-color: rgb(25, 25, 25);
+    border-radius: 0vh 2vh 2vh 0vh;
+}
+
+.AboutCardsContentCard {
+    width: 92%;
+    font-size: 1.3vw;
+    min-height: 4vw;
+    height: fit-content;
+    padding: 2%;
+    background-color: rgb(200, 200, 200);
+    box-shadow: -0.5vh 0.5vh 1vh 0vh rgb(60, 60, 60);
+    margin-left: 2%;
+    margin-top: 2%;
+    border-radius: 2vh;
+    font-family: helvetica;
+}
+
+.AboutCardsContentCard img {
+    width: 4vw;
+    height: 4vw;
+    float: left;
+    margin-right: 1vw;
+    filter: grayscale(100%);
+}
+
+.AboutCardssTitle {
+    background-color: white;
+    box-shadow: 0vh 0.5vh 1vh 0vh gray;
+    height: 4vw;
+    width: 100%;
+    margin-bottom: 2vw;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3vw;
+}
+
+.AboutCard1 {
+    position: absolute;
+    width: 30%;
+    height: 70vh;
+    left: 5%;
+    transform: perspective(100vh) rotateY(20deg);
+    margin-top: 17vh;
+}
+
+.AboutCard2 {
+    width: 30%;
+    height: 70vh;
+    margin-top: 17vh;
+    float: left;
+    margin-left: 35%;
+}
+
+.AboutCard2 .AboutCardsContentCard {
+    box-shadow: 0vh 0.5vh 1vh 0vh rgb(60, 60, 60);
+}
+
+.AboutCard3 {
+    margin-top: 17vh;
+    position: absolute;
+    width: 30%;
+    height: 70vh;
+    right: 5%;
+    transform: perspective(100vh) rotateY(-20deg);
+}
+
+.AboutCard3 .AboutCardsContentCard {
+    box-shadow: 0.5vh 0.5vh 1vh 0vh rgb(60, 60, 60);
+}
+
+.ContactPanelTable {
+    background-color: transparent;
+}
+
+.ContactPanelTable td {
+    width: 5vw;
+    height: 7vw;
+    border: 1vw white groove;
+    border-radius: 360vh;
+    transition: 0.2s;
+    filter: grayscale(100%);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ContactPanelTable td:hover {
+    transform: scale(1.1);
+    box-shadow: inset 0vh 0vh 2vw 0vh white;
+    background-size: 70%;
+}
+
+.ProjectsPanel {
+    padding-top: 12vh;
+    background-color: rgb(25, 25, 25);
+    font-family: consolas;
+    color: white;
+    overflow: hidden;
+}
+
+.ProjectsPanelTableTitles {
+    border: 0.4vh solid white;
+    padding: 2vh;
+    width: 30vh;
+    text-align: center;
+}
+
+.ProjectsPanelTableItems {
+    text-align: left start;
+}
+
+.ProjectsPanelItemURL {
+    text-decoration: none;
+    cursor: hand;
+    color: white;
+    width: 20vh;
+    max-width: none;
+}
+
+.ProjectsPanelTableItems td {
+    height: 10vh;
+    max-height: 10vh;
+    overflow: hidden;
+    border: 0.2vh solid white;
+    padding: 1vh 0vh 1vh 1vh;
+    width: 20vh;
+    line-break: normal;
+}
+
+.ProjectsPanelTableItems hr {
+    margin-right: 1vh;
+}
+
+.ProjectsPanelTableItems div {
+    height: 76vh;
+    max-height: 70vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    line-break: normal;
+}
+
+.ProjectsPanelTableItems ::-webkit-scrollbar {
+    width: 1.5vh;
+    background-color: gray;
+}
+
+.ProjectsPanelTableItems ::-webkit-scrollbar-thumb {
+    width: 1.5vh;
+    background-color: white;
+    border-radius: 3vh;
+}

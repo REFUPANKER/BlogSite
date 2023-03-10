@@ -1,0 +1,144 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Refupanker Blog
+    </title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body onscroll="bodyOnScroll()">
+    <span id="HomePointer"></span>
+    <section class="NavBar" id="NavBar">
+        <a style="margin-left: 3vh;" href="#HomePointer">Home</a>
+        <a style="float: right;" href="#ContactPointer">Contact</a>
+        <a style="float: right;" href="#ProjectsPointer">Projects</a>
+        <a style="float: right;" href="#AboutPanelPointer">About</a>
+        <a style="float: right;" target="_blank" href="InnerPages/Education.html">Education</a>
+    </section>
+    <div class="HomePanel FitScreenHeight"
+        style="background-image: linear-gradient(-150deg,rgb(50,50,50) 10%,transparent);">
+        <div style="font-family: Helvetica;font-size: 2vw;text-align: center;transform: translate(-50%,-50%);"
+            class="VerticalCenterAlign HorizontalCenterAlign">
+            <p style="margin: 0vh;font-size: 7vw;">
+                REFUPANKER
+            </p>
+            <p class="UnderNameTitle"></p>
+
+        </div>
+    </div>
+    <div>
+        <span id="AboutPanelPointer"></span>
+        <div class="AboutPanel">
+            <div class="AboutCardStyle AboutCard1" id="AboutCard1">
+                <div class="AboutCardssTitle">
+                    Education
+                </div>
+                <div class="AboutCardsContentCard">
+                    <img src="https://www.karabuk.edu.tr/wp-content/uploads/2018/03/baykus.png">
+                    Universty of Karabuk
+                    <br>Computer Programming
+                    <br><br>University (1/2)
+                </div>
+                <div class="AboutCardsContentCard">
+                    <img src="https://pbs.twimg.com/profile_images/1203768813747085314/6MYSTdzZ_400x400.jpg">
+                    Eren Enerji MTAL
+                    <br>Computer Techs
+                    <br>Backend development
+                    <br>High School (4/4)
+                </div>
+            </div>
+            <div class="AboutCardStyle AboutCard2" id="AboutCard2">
+                <div class="AboutCardssTitle">
+                    Skills
+                </div>
+                <div class="AboutCardsContentCard">
+                    <img src="https://cdn-icons-png.flaticon.com/512/6132/6132221.png">
+                    CSharp (Junior/Senior)
+                    <br>Object Oriented Programming
+                    <br>Mobile & Desktop Apps
+                    <br>Game Development
+                </div>
+                <div class="AboutCardsContentCard">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png">
+                    Java (Junior/Senior)
+                    <br>Object Oriented Programming
+                    <br>Mobile Apps
+                </div>
+                <div class="AboutCardsContentCard">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png">
+                    Python (Junior)
+                    <br>AI Apps
+                    <br>Bot apps
+                </div>
+            </div>
+            <div class="AboutCardStyle AboutCard3" id="AboutCard3">
+                <div class="AboutCardssTitle">
+                    Others
+                </div>
+                <div class="AboutCardsContentCard">
+                    About future plans,
+                    i dont think anything to do.
+                    maybe in one day i can get hope for future
+                </div>
+            </div>
+        </div>
+    </div>
+    <span id="ProjectsPointer"></span>
+    <div class="FitScreenHeight ProjectsPanel">
+        <table class="HorizontalCenterAlign">
+            <tr>
+                <td class="ProjectsPanelTableTitles">
+                    CSharp
+                </td>
+                <td class="ProjectsPanelTableTitles">
+                    Java
+                </td>
+                <td class="ProjectsPanelTableTitles">
+                    Python
+                </td>
+            </tr>
+            <tr class="ProjectsPanelTableItems">
+                <td>
+                    <div id="CSharpProjects"></div>
+                </td>
+                <td>
+                    <div id="JavaProjects"></div>
+                </td>
+                <td>
+                    <div id="PythonProjects"></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <span id="ContactPointer"></span>
+    <div style="background-color: rgb(5,5,5);height:30vw;width:100%;padding-top: 10vw;">
+        <table class="ContactPanelTable HorizontalCenterAlign" cellspacing="20">
+            <tr>
+                <td style="background-image: url('https://cdn-icons-png.flaticon.com/512/174/174883.png');"
+                    onclick="window.open('https:\\www.youtube.com/channel/UC11WUmFGWJZV1gw9H_KVg0g')"></td>
+                <td style="background-image: url('https://cdn-icons-png.flaticon.com/512/5968/5968756.png');"
+                    onclick="window.open('https:\\discord.gg/eyqZtUfU7M')"> </td>
+                <td style="background-image: url('https://cdn-icons-png.flaticon.com/512/4138/4138124.png');"
+                    onclick="window.open('https:\\www.instagram.com/refupanker/')"></td>
+                <td style="background-image: url('https://cdn-icons-png.flaticon.com/512/733/733553.png');"
+                    onclick="window.open('https:\\github.com/REFUPANKER')"></td>
+            </tr>
+        </table>
+    </div>
+    <div
+        style="text-align: center;height: 20vw;background-color: black;color:gray;font-family: 'Courier New', Courier, monospace;font-size: 2vw;">
+        <br><br><br>
+        <p>
+            <b>Pankers Community</b>
+            <br>
+            All Rights Reserverd
+        </p>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
